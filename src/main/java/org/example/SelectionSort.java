@@ -3,14 +3,15 @@ package org.example;
 public class SelectionSort {
 
     public static void main(String[] args) {
-        int arr[] = {38, 52, 9, 18, 6, 62, 13};
+        String arr[] = {"aeepak","aahul","aamesh","bhuppl","amit"};
         int min;
-        int temp = 0;
+        String temp = "";
         for (int i = 0; i < arr.length; i++) {
             min = i;
 
             for (int j = i + 1; j < arr.length; j++) {
-                if (arr[j] < arr[min]) {
+                if (arr[j].compareTo(arr[min])<0)
+                {
                     min = j;
                 }
             }
